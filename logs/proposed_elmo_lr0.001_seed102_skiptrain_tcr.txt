@@ -1,0 +1,19 @@
+exp_myLSTM.py:186: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  prediction_scores = softmax(prediction)
+Using ELMo (original)
+___________________HYPER-PARAMETERS:LSTM___________________
+{'embedding_dim': 1024, 'lstm_hidden_dim': 64, 'nn_hidden_dim': 64, 'position_emb_dim': 32, 'bigramStats_dim': 2, 'lemma_emb_dim': 200, 'dropout': False, 'batch_size': 1}
+___________________HYPER-PARAMETERS:OPTIMIZER___________________
+{'lr': 0.001, 'weight_decay': 0.01, 'step_size': 10, 'gamma': 0.3, 'max_epoch': 30}
+---------
+ratio=0.3,emb_size=200,layer=1
+DATASET=tcr
+TEST ACCURACY=0.7850
+TEST PRECISION=0.7973
+TEST RECALL=0.7850
+TEST F1=0.7911
+CONFUSION MAT:
+[[1426  329    0   25]
+ [ 195  651    0   16]
+ [   3    1    0    0]
+ [   0    0    0    0]]
